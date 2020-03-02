@@ -92,32 +92,46 @@ function hide(articleId) {
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="p1" role="tabpanel" aria-labelledby="home-tab">
-    <div class="container" >
-          <div class="row" >
-                 <div class="col-sm-10" id="p1">
-                         <div data-role="page">
-                                 <div data-role="header">
-                                     </br>
-                                     <h3>Intervalles de poids</h3>
-                                     </br>
-                                 </div>
-
-                                 <div data-role="main" class="ui-content" id="ui-content">
-                                      <form method="post" action="/action_page_post.php">
-                                            <div data-role="rangeslider" >
-                                              <label for="poids-min">Poids:</label>
-                                              <input type="range" name="poids-min" id="poids-min" value="200" min="0" max="1000">
-                                              <label for="poids-max"></label>
-                                              <input type="range" name="poids-max" id="poids-max" value="800" min="0" max="1000">
-                                            </div>
-                                            <button type="button" class="btn btn-sm btn-primary">Soumettre</button>
-                                      </form>
-                                 </div>
-                         </div>
+    <div class="container">
+          <div class="row">
+                 <div class="col-sm-5" id="p1">
+                        <div class="input-group">
+                                <div class="input-group-btn">
+                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#" title="Lien 1">Lien 1</a></li>
+                                    <li><a href="#" title="Lien 2">Lien 2</a></li>
+                                    <li><a href="#" title="Lien 3">Lien 3</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#" title="Lien 4">Lien 4</a></li>
+                                    </ul>
+                                </div>
+                        <input type="text" class="form-control" aria-label="...">
+                        </div>
                  </div>
+                 <div class="col-sm-5" id="p1">
+                        <div class="input-group">
+                                  <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#" title="Lien 1">Lien 1</a></li>
+                                        <li><a href="#" title="Lien 2">Lien 2</a></li>
+                                        <li><a href="#" title="Lien 3">Lien 3</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#" title="Lien 4">Lien 4</a></li>
+                                        </ul>
+                                  </div>
+                        <input type="text" class="form-control" aria-label="...">
+                        </div>
+                 </div>
+
+
           </div>
+          </br>
+          <button type="button" class="btn btn-sm btn-primary">Soumettre</button>
     </div>
   </div>
+
   <div class="tab-pane" id="p2" role="tabpanel" aria-labelledby="profile-tab">
         <div class="container" >
               <div class="row" >
@@ -137,6 +151,7 @@ function hide(articleId) {
                                            <label for="poids-max"></label>
                                            <input type="range" name="poids-max" id="poids-max" value="800" min="0" max="1000">
                                        </div>
+
                                        <button type="button" class="btn btn-sm btn-primary">Soumettre</button>
                                        </form>
                               </div>
