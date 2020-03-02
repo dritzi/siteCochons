@@ -1,5 +1,6 @@
 
-<nav id="my_nav_bar " class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+<nav id="my_nav_bar " class="navbar navbar-expand-lg navbar-dark navbar-full" style="background-color:pink">
+
 
   <a id="logo" class="navbar-brand" href="" ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,25 +10,25 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link text-warning <?=($pageId=='accueil'?'active':'') ?>" href="index.php?pageId=accueil">
+        <a class="nav-link text-danger <?=($pageId=='accueil'?'active':'') ?>" href="index.php?pageId=accueil">
           <i class="fa fa-home"></i>
           Accueil
           </a>
       </li>
       <li class="nav-item">
-         <a class="nav-link text-warning <?=($pageId=='cochons'?'active':'') ?>" href="index.php?pageId=admin&item=cochon">
+         <a class="nav-link text-danger <?=($pageId=='cochons'?'active':'') ?>" href="index.php?pageId=admin&item=cochon">
           <i class="fa fa-envelope-o"></i>
           Cochons
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-warning <?=($pageId=='societe'?'active':'') ?>" href="index.php?pageId=accueil">
+        <a class="nav-link text-danger <?=($pageId=='societe'?'active':'') ?>" href="index.php?pageId=accueil">
           <i class="fa fa-envelope-o"></i>
           Soci&eacute;t&eacute
         </a>
       </li>
      <li class="nav-item">
-         <a class="nav-link text-warning <?=($pageId=='contact'?'active':'') ?>" href="index.php?pageId=contact">
+         <a class="nav-link text-danger <?=($pageId=='contact'?'active':'') ?>" href="index.php?pageId=contact">
            <i class="fa fa-envelope-o"></i>
             Contact
          </a>

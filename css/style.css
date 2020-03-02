@@ -26,9 +26,13 @@ a{
 	height: 30px;
 	padding: 10px 10px 10px 10px;
 }
+#my_nav_bar{
+	background-color: hotpink;
+}
 
 #my_nav_bar a{
 	color: #f9df1b;
+
 }
 
 #my_nav_bar a:hover{
@@ -41,28 +45,6 @@ a{
 	font-weight: bold;
 	text-decoration: underline;
 }
-
-
-/*.btn.vertical {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-/* fin barre de navigation */
-
-
-
-/* debut barre laterale
-.sidenav {
-      	padding-top: 20px;
-      	background-color: #f1f1f1;
-		margin-bottom : -20px;
-}
-
-.sidenav a{
-    color: #337ab7;
-}
-	fin barre laterale */
 
 
 
@@ -210,7 +192,7 @@ a{
 
 /* debut footer */
 footer{
-	background-color : #777777;
+	background-color : pink;
 	color: #ffffff;
 }
 
@@ -288,15 +270,16 @@ anchors are inline so you need ot make them block to go full width
 	width:100%;
 }
 /* barre de navigation */
-
+.navbar-default {
+	/* Couleur de fond de la barre de navigation */
+	background-color: #F8F8F8;
+	border-color: #E7E7E7;
+}
 .navbar-icon-top .navbar-nav .nav-link > .fa {
 	position: relative;
 	width: 36px;
 	font-size: 24px;
 }
-
-
-
 
 
 .navbar-icon-top .navbar-nav .nav-link > .fa {
@@ -340,8 +323,6 @@ anchors are inline so you need ot make them block to go full width
 		top: 0;
 		line-height: 24px;
 	}
-
-
 }
 
 @media (min-width: 992px) {
@@ -383,10 +364,68 @@ anchors are inline so you need ot make them block to go full width
 		line-height: 24px;
 	}
 }
+#p1, #p2{
+	width:100%;
+	margin: auto;
+	text-align: center;
+}
+#ui-content{
+	width:100%;
+	margin: auto;
+	text-align: center;
+}
 	#ex1Slider .slider-selection {
 		background: #BABABA;
+		align-content: center;
 	}
+.card-horizontal {
+	display: flex;
+	flex: 1 1 auto;
+}
+.card .btn {
+	background-color:
+			pink;
+	border-color:
+			black;
+}
+#btnbck1 , #btnbck2{
+	padding: 2rem;
+}
 
 
+.h2{
+	text-align: center;
+}
 
+.modal-footer {
+	vertical-align: bottom;
+}
+
+.image-wrapper {
+	width: 600px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 10px 0;
+}
+.image-wrapper img {
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.use-cover-background {
+	background-size: cover;
+	background-position: center;
+}
+.square {
+
+	width: 600px;
+	height: 300px;
+}
 
