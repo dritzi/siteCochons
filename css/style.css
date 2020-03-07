@@ -142,10 +142,7 @@ a{
 }
 /* fin responsive map */
 
-.p1{
-	margin : auto;
-	position : relative;
-}
+
 
 /* debut administration */
 #div_liste {
@@ -374,21 +371,39 @@ anchors are inline so you need ot make them block to go full width
 	margin: auto;
 	text-align: center;
 }
-	#ex1Slider .slider-selection {
+
+#ex1Slider .slider-selection {
 		background: #BABABA;
 		align-content: center;
-	}
+}
+
 .card-horizontal {
 	display: flex;
 	flex: 1 1 auto;
 }
+
 .card .btn {
 	background-color:
 			pink;
 	border-color:
 			black;
 }
+
+.figure-caption {
+	position: relative;
+	top: -2em;
+	color: pink;
+	background-color: #222;
+	size: auto;
+}
+
+.badge{
+	position: relative;
+	top: -20em;
+}
+
 #btnbck1 , #btnbck2{
+	position: relative;
 	padding: 2rem;
 }
 

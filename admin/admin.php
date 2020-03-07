@@ -3,9 +3,9 @@
 		<div class="col-sm-8">
 <?php
 /* Le ticket de connexion est enregistré dans une variable SESSION puis on le vérifie */
-//if(session_status() == PHP_SESSION_NONE){
-//	session_start();
-//}
+if(session_status() == PHP_SESSION_NONE){
+	session_start();
+}
 
 if (!isset($_GET['item'])) {
 	// demande de deconnexion

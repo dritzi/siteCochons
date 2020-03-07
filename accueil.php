@@ -78,7 +78,7 @@ function hide(articleId) {
  <!-- /.carousel -->
 
 
-<!--------------------------Section Catégories----------------------------------------------->
+<!--------------------------Section Sélections----------------------------------------------->
 <!-- Nav tabs -->
 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
   <li class="nav-item">
@@ -109,8 +109,11 @@ function hide(articleId) {
                         <input type="text" class="form-control" aria-label="...">
                         </div>
                  </div>
+
+
                  <div class="col-sm-5" id="p1">
                         <div class="input-group">
+
                                   <div class="input-group-btn">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
                                         <ul class="dropdown-menu">
@@ -163,16 +166,24 @@ function hide(articleId) {
 
 
  <!---------------------------------------Section cartes--------------------------------------------------->
- <div class="col-12 mt-3">
+ <div class="row">
+ <div class="col-sm-12">
        <div class="card">
                <div class="card-horizontal" >
-               <div class="use-cover-background square" style="background-image: url(images/cochon2.jpg)"></div>
-                        <!--<div class="img-square-wrapper" >
-                             <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
-                        </div>-->
-                        <div class="card-body">
+                <div class="container w-50">
+                            <figure class="figure">
+                               <img src="images/cochon7.jpg"  style="100%" class="figure-img img-fluid rounded" alt="Logo HTML w3">
+                               <figcaption class="badge badge-secondary">Un sticker HTML5</figcaption>
+                            </figure>
+                </div>
+                        <div class="card-body w-50">
                             <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
+                            <p class="card-text">Il existe aujourd'hui 3 types d'élevage porcin en France3 :
+                             Le bâtiment sur caillebotis qui représente 95 % des élevages en France. C'est le plus répandu en Europe et dans le monde. Les porcs sont élevés au sein de bâtiments dont le sol est couvert de caillebotis permettant
+                              l'évacuation des excréments et de l'urine des animaux. Ce mode d'élevage facilite le travail de l'éleveur pour nourrir, surveiller et soigner les animaux. Cependant, de nombreuses interrogations peuvent être soulevées
+                               en termes de bien-être animal puisque les animaux sont confinés dans des espaces exigus4.
+                             Le bâtiment en litière bio-maitrisée qui représente 5 % des élevages français. Le sol des bâtiment est bétonné et recouvert d'une litière en sciure, paille etc. qui absorbe excréments et urines.
+                             L'élevage en plein air, enfin, représente 5 % des élevages français seulement. Les animaux sont élevés en extérieur et disposent d'abris paillés avec toiture en tôle.
                             </p>
                                 <div class="d-flex justify-content-around" id ="btnbck1">
                                     <button type="submit" class="btn btn-sm md-auto">CONTACT</button>
@@ -182,25 +193,34 @@ function hide(articleId) {
                </div>
        </div>
   </div>
-         <div class="col-12 mt-3">
-                <div class="card">
-                        <div class="card-horizontal" >
-                        <div class="use-cover-background square" style="background-image: url(images/cochon5.jpg)"></div>
-                                 <!--<div class="img-square-wrapper" >
-                                      <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
+ <div class="col-sm-12">
+        <div class="card">
+                <div class="card-horizontal" >
+                 <div class="container w-50">
+                             <figure class="figure">
+                                <img src="images/cochon8.jpg"  style="100%" class="figure-img img-fluid rounded" alt="Logo HTML w3">
+                                <figcaption class="badge badge-secondary">Un sticker HTML5</figcaption>
+                             </figure>
+                 </div>
+                         <div class="card-body w-50">
+                             <h4 class="card-title">Card title</h4>
+                             <p class="card-text" >Il existe aujourd'hui 3 types d'élevage porcin en France:
+                              Le bâtiment sur caillebotis qui représente 95 % des élevages en France. C'est le plus répandu en Europe et dans le monde. Les porcs sont élevés au sein de bâtiments dont le sol est couvert de caillebotis permettant
+                               l'évacuation des excréments et de l'urine des animaux.
+                               </p>
+                                 <!--<div class="d-flex justify-content-around" id ="btnbck1">
+                                     <button type="submit" class="btn btn-sm md-auto">CONTACT</button>
+                                     <button type="submit" class="btn btn-sm md-auto" >DETAILS</button>
                                  </div>-->
-                                 <div class="card-body">
-                                     <h4 class="card-title">Card title</h4>
-                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
-                                     </p>
-                                         <div class="d-flex justify-content-around" id ="btnbck1">
-                                             <button type="submit" class="btn btn-sm md-auto">CONTACT</button>
-                                             <button type="submit" class="btn btn-sm md-auto" >DETAILS</button>
-                                         </div>
+                                 <div>
+                                 <a href="#" class="btn btn-primary">Un lien</a>
+                                 <a href="#" class="btn btn-primary">Un lien</a>
                                  </div>
-                        </div>
+                         </div>
                 </div>
-           </div>
+        </div>
+   </div>
+</div>
 
 
 
