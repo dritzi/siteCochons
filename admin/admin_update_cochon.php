@@ -33,7 +33,7 @@ elseif (isset($_GET['id']) && $_GET['id']=='new') {
 			$requete=$db->prepare($req,array());
 			$requete->execute(array($_POST['nomCochon'],$_POST['sexe'],$_POST['dateNaissance'],$_POST['dureeVie'],$_POST['poids'],$res_upload['desc']));
 			//var_dump($result);
-		    var_dump($requete);
+		    //var_dump($requete);
 			$req_last = "SELECT LAST_INSERT_ID() AS NEW_ID;";
 			$results_last = $db->query($req_last);
 			$last_insert = $results_last->fetch();
@@ -51,7 +51,7 @@ else {
 	$param_id = $_GET['id'];
 	if (isset($_POST['save']))  {
 		$res_upload = upload();
-		var_dump($res_upload['desc']);
+		//var_dump($res_upload['desc']);
 		if ($res_upload['res'] == 0) {
 			echo "<div class='alert alert-warning' role='alert'>".$res_upload['desc']."</div>";
 		}
@@ -67,7 +67,7 @@ else {
 						WHERE `idCochon`=?;";
 			$results=$db->prepare($req,array());
 			$results->execute(array($_POST['nomCochon'],$_POST['sexe'],$_POST['dateNaissance'],$_POST['dureeVie'],$_POST['poids'],$res_upload['desc'],$param_id));
-			var_dump($req);
+			///var_dump($req);
 
 			//var_dump($req);
 		    //var_dump($results);
@@ -96,7 +96,7 @@ if ($idCochon != "new") {
 	//var_dump($req);
 	//var_dump($results);
 	$row = $results->fetch(); // On récupère une seule ligne
-	var_dump($row);
+	//var_dump($row);
 	$nomCochon = $row['nomCochon'];
 	$poids = $row['poids'];
 	$dureeVie = $row['dureeVie'];
