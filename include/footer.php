@@ -2,11 +2,11 @@
 	<div class="row text-center">
 		<div class="col">
 			<a href="#">
-				Conditions d'utilisation
+                <p>Conditions d'utilisation</p>
 			</a>
 		</div>
 		<div class="col">
-			© 2020 Cochons<br>Tous droits réservés
+            <p>© 2020 Cochons<br>Tous droits réservés</p>
 		</div>
 		<div class="col">
 			<a href="https://fr-fr.facebook.com/pages/category/Community/Amis-des-petits-cochons-153203668053919/"" target="_blank">

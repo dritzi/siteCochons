@@ -2,8 +2,9 @@
 <?php include ('./include/connexion.php');?>
 
 <?php
+session_start();
 $db=new connexion();
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $sql = "SELECT count(*) AS nb_cochons FROM `cochon` WHERE sexe LIKE 'M';";
 $results = $db->query($sql);
 $row = $results->fetch();
@@ -56,7 +57,7 @@ $results = $db->query($sql);
 			.tablesorter()
 			.tablesorterPager({
       			container: $('#pager'),
-      			size: 3
+      			size: 25
       		});
 
 			; });

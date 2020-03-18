@@ -1,13 +1,13 @@
-//<?php include ('./include/control_access.php');?>
+<?php //include ('./include/control_access.php');?>
 <?php include ('./include/connexion.php');?>
 <?php include ('./include/upload.php');?>
 <?php
 $db=new connexion();
+session_start();
 if (isset($_GET['id']) && isset($_POST['delete'])) {
 	$param_id = $_GET['id'];
 		// On supprime de la base de donnée
-		$req = "DELETE FROM `cochon`
-					WHERE idCochon = ?;";
+		$req = "DELETE FROM `cochon` WHERE idCochon = ?;";
 	    $results=$db->prepare($req,array());
 		$results->execute(array($param_id));
 		//var_dump($req);
@@ -28,13 +28,7 @@ elseif (isset($_GET['id']) && $_GET['id']=='new') {
 		}
 		else {
 			// On ajoute dans la base de donnée
-			$req = "INSERT INTO `cochon` (nomCochon,
-										sexe,
-										dateNaissance,
-										dureeVie,
-										poids,
-										lienPhoto
-										)
+			$req = "INSERT INTO `cochon` (nomCochon,sexe,dateNaissance,dureeVie,poids,lienPhoto)
 						VALUES(?,?,?,?,?,?);";
 			$requete=$db->prepare($req,array());
 			$requete->execute(array($_POST['nomCochon'],$_POST['sexe'],$_POST['dateNaissance'],$_POST['dureeVie'],$_POST['poids'],$res_upload['desc']));
@@ -144,7 +138,7 @@ if (!isset($_POST['delete']) && !(isset($_GET['id']) && $_GET['id']=='new' && is
 
 	<div class="form-group">
 		<label for="dateNaissance">Date de naissance (AAAA-MM-JJ hh:mm:ss)</label>
-		<input type="datetime" id="dateNaissance" name="dateNaissance" value="<?=$dateNaissance?>" placeholder="YYYY-MM-DD hh:mm:ss" required class="form-control">
+		<input type="date" id="dateNaissance" name="dateNaissance" value="<?=$dateNaissance?>" placeholder="YYYY-MM-DD hh:mm:ss" required class="form-control">
 	</div>
 
 	<div class="form-group">
@@ -158,7 +152,7 @@ if (!isset($_POST['delete']) && !(isset($_GET['id']) && $_GET['id']=='new' && is
 	<div class="form-group clearfix">
 		<div class="float-left">
 			<label for="lienPhoto">Image</label>
-			<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+			<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
 			<input type="file" id="file" name="file" class="form-control-file" accept="image/*" >
 		</div>
 		<?php if ($lienPhoto!='') {?>

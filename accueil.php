@@ -1,16 +1,5 @@
-<?php include ('./include/connexion_db.php');?>
-<script>
-function show(articleId) {
-	document.getElementById('card'+articleId).classList.remove('limit_text', 'card-text');
-	document.getElementById('btnshow'+articleId).style.display='none';
-	document.getElementById('btnhide'+articleId).style.display='inline-block';
-}
-function hide(articleId) {
-	document.getElementById('card'+articleId).classList.add('limit_text', 'card-text');
-	document.getElementById('btnshow'+articleId).style.display='inline-block';
-	document.getElementById('btnhide'+articleId).style.display='none';
-}
-</script>
+<?php include ('./include/connexion.php');?>
+
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
@@ -34,7 +23,6 @@ function hide(articleId) {
                     </a>
                     </div>
                         <!-- /.carousel-item -->
-
 
                     <div class="carousel-item">
                     <a href="https://bootstrapcreative.com/">
@@ -94,44 +82,23 @@ function hide(articleId) {
   <div class="tab-pane active" id="p1" role="tabpanel" aria-labelledby="home-tab">
     <div class="container">
           <div class="row">
-                 <div class="col-sm-5" id="p1">
-                        <div class="input-group">
-                                <div class="input-group-btn">
-                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                    <li><a href="#" title="Lien 1">Lien 1</a></li>
-                                    <li><a href="#" title="Lien 2">Lien 2</a></li>
-                                    <li><a href="#" title="Lien 3">Lien 3</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#" title="Lien 4">Lien 4</a></li>
-                                    </ul>
-                                </div>
-                        <input type="text" class="form-control" aria-label="...">
-                        </div>
+                 <div class="col-sm-10" id="p1">
+                     <div data-role="page">
+                         <div data-role="header">
+                             </br>
+                             <h3>Intervalles de poids</h3>
+                             </br>
+                         </div>
+
+                     <div id="inputRange">
+                         <input type="number" step="5" min="0" max="50" placeholder="Min" id="poidsmin" >
+                         <input type="number" step="5" min="51" max="100" placeholder="Max" id="poidsmax">
+                     </div>
                  </div>
-
-
-                 <div class="col-sm-5" id="p1">
-                        <div class="input-group">
-
-                                  <div class="input-group-btn">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                        <li><a href="#" title="Lien 1">Lien 1</a></li>
-                                        <li><a href="#" title="Lien 2">Lien 2</a></li>
-                                        <li><a href="#" title="Lien 3">Lien 3</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" title="Lien 4">Lien 4</a></li>
-                                        </ul>
-                                  </div>
-                        <input type="text" class="form-control" aria-label="...">
-                        </div>
                  </div>
-
-
           </div>
           </br>
-          <button type="button" class="btn btn-sm btn-primary">Soumettre</button>
+          <button type="button" class="btn btn-sm btn-info">Soumettre</button>
     </div>
   </div>
 
@@ -145,23 +112,19 @@ function hide(articleId) {
                                         <h3>Intervalles de poids</h3>
                                          </br>
                                        </div>
+                                      <div id="sliderBox">
+                                          <input type="range" id="slider0to50" step="5" min="0" max="50">
+                                          <input type="range" id="slider51to100" step="5" min="50" max="100">
+                                      </div>
 
-                                       <div data-role="main" class="ui-content" id="ui-content">
-                                       <form method="post" action="/action_page_post.php">
-                                           <div data-role="rangeslider" >
-                                           <label for="poids-min">Poids:</label>
-                                           <input type="range" name="poids-min" id="poids-min" value="200" min="0" max="1000">
-                                           <label for="poids-max"></label>
-                                           <input type="range" name="poids-max" id="poids-max" value="800" min="0" max="1000">
-                                       </div>
-
-                                       <button type="button" class="btn btn-sm btn-primary">Soumettre</button>
-                                       </form>
                               </div>
                       </div>
               </div>
         </div>
-  </div>
+
+    </br>
+    <button type="button" class="btn btn-sm btn-info">Soumettre</button>
+</div>
 </div>
 
 
@@ -173,7 +136,7 @@ function hide(articleId) {
                 <div class="container w-50">
                             <figure class="figure">
                                <img src="images/cochon7.jpg"  style="100%" class="figure-img img-fluid rounded" alt="Logo HTML w3">
-                               <figcaption class="badge badge-secondary">Un sticker HTML5</figcaption>
+                               <figcaption class="badge badge-secondary">Nos cochons sont élevés en plein air</figcaption>
                             </figure>
                 </div>
                         <div class="card-body w-50">
@@ -187,7 +150,7 @@ function hide(articleId) {
                             </p>
                                 <div class="d-flex justify-content-around" id ="btnbck1">
                                     <button type="submit" class="btn btn-sm md-auto">CONTACT</button>
-                                    <button type="submit" class="btn btn-sm md-auto" >DETAILS</button>
+                                    <button data-id='6' type="submit" class="cochoninfo btn btn-sm md-auto" >DETAILS</button>
                                 </div>
                         </div>
                </div>
@@ -199,7 +162,7 @@ function hide(articleId) {
                  <div class="container w-50">
                              <figure class="figure">
                                 <img src="images/cochon8.jpg"  style="100%" class="figure-img img-fluid rounded" alt="Logo HTML w3">
-                                <figcaption class="badge badge-secondary">Un sticker HTML5</figcaption>
+                                <figcaption class="badge badge-secondary">Pas d'antibiotique, pas d'hormone de croissance</figcaption>
                              </figure>
                  </div>
                          <div class="card-body w-50">
@@ -212,16 +175,58 @@ function hide(articleId) {
                                      <button type="submit" class="btn btn-sm md-auto">CONTACT</button>
                                      <button type="submit" class="btn btn-sm md-auto" >DETAILS</button>
                                  </div>-->
-                                 <div>
-                                 <a href="#" class="btn btn-primary">Un lien</a>
-                                 <a href="#" class="btn btn-primary">Un lien</a>
-                                 </div>
+                             <div class="d-flex justify-content-around" id ="btnbck1">
+                                 <button type="submit" class="btn btn-sm md-auto">CONTACT</button>
+                                 <button data-id='5' type="submit" class="cochoninfo btn btn-sm md-auto" >DETAILS</button>
+                             </div>
                          </div>
                 </div>
         </div>
    </div>
-</div>
+    <div class="modal fade" id="empModal" role="dialog">
+        <div class="modal-dialog">
 
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">User Info</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ </div>
+</div>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+
+            $('.cochoninfo').click(function(){
+
+                var userid = $(this).data('id');
+
+                // AJAX request
+                $.ajax({
+                    url: 'ajaxfile.php',
+                    type: 'post',
+                    data: {userid: userid},
+                    success: function(response){
+                        // Add response in Modal body
+                        $('.modal-body').html(response);
+
+                        // Display Modal
+                        $('#empModal').modal('show');
+                    }
+                });
+            });
+        });
+    </script>
 
 
 

@@ -13,9 +13,12 @@
 		else if ($pageId == 'contact') {
 			include ('./contact.php');
 		}
+		else if ($pageId=='liste'){
+		    include('./liste.php');
+        }
 	}
 	else {
-		include ('./include/accueil.php');
+		include ('./accueil.php');
 	}
 ?>
 

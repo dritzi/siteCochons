@@ -6,10 +6,10 @@ class Connexion extends PDO
     private $db = 'cochons'; // base de données
     private $host = 'localhost'; // adresse de la base
     private $user = 'root'; // nom
-    private $pwd = ''; // mot de passe
+    private $pwd = 'root'; // mot de passe
     private $con; //
-    private $select; // requête de séléction
-    private $execute; // requête d'execution
+    private $select; // requête de sélection
+    private $execute; // requête d'éxecution
     private $email='dritz@free.fr'; // email de l'admin du site
     private $dns;
 

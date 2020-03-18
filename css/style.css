@@ -14,19 +14,18 @@ a{
 }
 /* fin liens */
 
-
-
 /* debut barre de navigation */
 #logo{
-	background-image: url("/images/cochon_mignon.png");
+	background-image: url("../images/cochon_mignon.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 30px;
-	height: 30px;
-	padding: 10px 10px 10px 10px;
+	height: 45px;
+	width: 45px;
 }
-#my_nav_bar{
+
+
+nav_bar{
 	background-color: hotpink;
 }
 
@@ -44,14 +43,16 @@ a{
 #my_nav_bar .nav-link.active{
 	font-weight: bold;
 	text-decoration: underline;
+	color: #f9df1b;
 }
+
 
 
 
 /* debut news */
 .card-text{
   width: 100%; /* à modifier selon vos besoins */
-  max-height : 30px;
+  //max-height : 30px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -190,25 +191,26 @@ a{
 /* debut footer */
 footer{
 	background-color : pink;
-	color: #ffffff;
 }
 
-footer a{
-	color: #ffffff;
-}
 
 footer a:hover{
-	color: #ffffff;
 	font-weight:bold;
-	text-decoration:none;
+}
+
+footer p
+{
+	text-align: center;
+	color: #ff0a03;
 }
 
 #facebook{
-	background-image:url("/images/logo_facebook.png");
+	background-image:url("../images/logo_facebook.png");
 	background-repeat: no-repeat;
 	background-size: 25px;
 	width: 25px;
 	height: 25px;
+	color: #0d4c84;
 }
 /* fin footer */
 
@@ -264,25 +266,9 @@ anchors are inline so you need ot make them block to go full width
 */
 .carousel-item a {
 	display: block;
-	width:100%;
-}
-/* barre de navigation */
-.navbar-default {
-	/* Couleur de fond de la barre de navigation */
-	background-color: #F8F8F8;
-	border-color: #E7E7E7;
-}
-.navbar-icon-top .navbar-nav .nav-link > .fa {
-	position: relative;
-	width: 36px;
-	font-size: 24px;
+
 }
 
-
-.navbar-icon-top .navbar-nav .nav-link > .fa {
-	top: 3px;
-	line-height: 12px;
-}
 
 @media (min-width: 576px) {
 	.navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
@@ -393,13 +379,18 @@ anchors are inline so you need ot make them block to go full width
 	position: relative;
 	top: -2em;
 	color: pink;
-	background-color: #222;
+	background-color: #2068a8;
 	size: auto;
 }
 
 .badge{
 	position: relative;
-	top: -20em;
+	top: -25em;
+	line-height: 2;
+}
+.badge-secondary {
+	color: #fff;
+	background-color: #0d4c84;
 }
 
 #btnbck1 , #btnbck2{
